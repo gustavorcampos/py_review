@@ -80,4 +80,6 @@ print(f'Lista insert index {lista_x}')
 lista_x[1] = 'Gustavo X'
 print(f'Lista alterando elemento {lista_x}')
 
+# Teste Commit
+
 # Parei no minuto 40:11
