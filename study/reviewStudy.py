@@ -79,7 +79,36 @@ lista_x.insert(0, 'GRC Index')
 print(f'Lista insert index {lista_x}')
 lista_x[1] = 'Gustavo X'
 print(f'Lista alterando elemento {lista_x}')
+# Tuples são imutáveis - Sem alterações
+var_tupla = (0, 2, 3)
+print(var_tupla)
 
-# Teste Commit
+# For loops
+x = [1, 5, 9, 10]
+for i, element in enumerate(x):
+    print(i, element)
+for i in range(10):
+    print(i)
 
-# Parei no minuto 40:11
+# While
+x = [1, 2, 3, 4, 45]
+i = 0
+while i < 10:
+    print('run')
+    i += 1
+
+# Slice Operator
+x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+y = ['hi', 'hello', 'goodbye', 'cya', 'sure']
+s = 'hello'
+# sliced = [start:stop:step]
+print(x[-1:])
+
+# Dictionaries
+x = {'keyex': 'valuex'}
+print(x['keyex'])
+print('keyex' in x)
+for key in x:
+    print(x[key])
+
+# Parei no minuto 57:52
