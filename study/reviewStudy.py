@@ -111,4 +111,39 @@ print('keyex' in x)
 for key in x:
     print(x[key])
 
+# Comprehensions
+x = [x for x in range(5)]
+print(x)
+x = [['Teste' for i in range(5)] for x in range(5)]
+print(x)
+
+
+# Functions
+def func_teste(x_in, y_in, f_in=None):
+    print(f'Run function with value x {x_in} and y {y_in}')
+    z = x_in + y_in
+    return z, x_in * 5  # Retorno de mais de uma valor retorna Tupla
+
+
+var_z = func_teste(1, 2)
+print(f'Var Z: {var_z}')
+r1, r2 = func_teste(1, 2)  # Exemplo para retornar var's especificas vs Tupla acima
+print(r1)
+print(r2)
+x = [1, 2, 3, 4, 5]
+print(*x)
+# *x retorna cada valor da lista separado por espaço (unpacking)
+# * para listas e duplas e ** para dicionários
+
+# Exceptions
+# Raise Exception('Bad')
+
+# Try Cacth
+try:
+    x = 7 / 0
+except Exception as e:
+    print(e)
+finally:
+    print('Continue')
+
 # Parei no minuto 57:52
