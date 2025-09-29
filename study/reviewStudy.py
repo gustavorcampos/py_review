@@ -122,6 +122,7 @@ print(x)
 def func_teste(x_in, y_in, f_in=None):
     print(f'Run function with value x {x_in} and y {y_in}')
     z = x_in + y_in
+    print(f_in)
     return z, x_in * 5  # Retorno de mais de uma valor retorna Tupla
 
 
@@ -145,5 +146,17 @@ except Exception as e:
     print(e)
 finally:
     print('Continue')
+
+# Lambda
+# result = lambda x: x + 5
+# print(result(5))
+
+# Map & Filter
+x = [1, 2, 3, 4, 5, 6, 7, 8]
+mp = map(lambda t: t + 2, x)
+print(list(mp))
+# Filter retorna bool
+mp = filter(lambda t: t > 3, x)
+print(list(mp))
 
 # Parei no minuto 57:52
